@@ -47,6 +47,8 @@ public class TodoController {
     public TodoResponse update(@PathVariable Long id,
                                @Valid @RequestBody TodoUpdateRequest request) {
         return todoService.update(id, request);
+
+        Sytem.out.println("prueba");
     }
 
     @DeleteMapping("/{id}")
